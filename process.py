@@ -257,8 +257,8 @@ class ObjectDetectionTransformer(BaseEstimator, TransformerMixin):
                 features = seq(window)
                 # if len(features) < 10414:
                 #     continue
-                print(f"processing {x} {y} {resized_image.shape} {winSize}, scale {scale}")
                 confidence = self.svm_with_hard_negatives.decision_function([features])[0]
+                print(f"processing {x} {y} {resized_image.shape} {winSize}, scale {scale}, confidence {confidence}")
 
                 if confidence >= self.threshold:
                     x_coord = int(x * scale)
