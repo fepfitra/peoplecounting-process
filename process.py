@@ -280,5 +280,3 @@ class ObjectDetectionTransformer(BaseEstimator, TransformerMixin):
 # if len(nms_detections) > 0:
 #     bounding_box_list = nms_detections.tolist()
 #     print(bounding_box_list)
-# else:
-#     print("NO FACES DETECTED IN THE IMAGE")
