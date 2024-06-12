@@ -16,4 +16,12 @@ RUN apt-get update && apt-get install -y \
 COPY . /app
 
 # Install dependencies with pip
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+# Make port 5000 available to the world outside this container
+EXPOSE 5000
+
+# Run the application
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
 
