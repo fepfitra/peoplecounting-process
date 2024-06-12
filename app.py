@@ -42,7 +42,7 @@ def process_image():
         end = time.time()
 
         response = jsonify({
-            'boxes': [(0, 0, 100, 100)],
+            'boxes': boxes,
             'time': end-start
         })
         response.headers.add('Access-Control-Allow-Origin', '*')
