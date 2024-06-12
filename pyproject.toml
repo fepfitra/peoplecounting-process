@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "peoplecounting-py"
+version = "0.1.0"
+description = ""
+authors = ["fepfitra <fitriansyahekaputra2001@mail.ugm.ac.id>"]
+# readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+flask = "^3.0.3"
+opencv-python = "^4.10.0.82"
+numpy = "^1.26.4"
+requests = "^2.32.3"
+scikit-learn = "^1.5.0"
+scikit-image = "^0.23.2"
+albumentations = "^1.4.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
